@@ -1,0 +1,84 @@
+/* Custom CSS Variables */
+:root {
+  --negus-bg: #000000;
+  --negus-text: #FFFFFF;
+  --negus-accent-blue: #2563EB;
+  --negus-accent-green: #10B981; /* Splinter Cell Green */
+  --negus-font-main: 'Geist Sans', Inter, sans-serif;
+  --negus-font-mono: 'Space Mono', monospace;
+}
+
+/* Base Style */
+body {
+  background-color: var(--negus-bg);
+  color: var(--negus-text);
+  font-family: var(--negus-font-main);
+  margin: 0;
+}
+
+/* Splinter Cell Menu Button (The pulsing green dots) */
+.menu-dots {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.menu-dots span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--negus-accent-green);
+  border-radius: 50%;
+  animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+  0% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.7; }
+}
+
+/* The Retractable Menu Panel */
+.main-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: #111;
+  transition: right 0.4s ease;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 40px;
+}
+
+.main-menu.open {
+  right: 0;
+}
+
+/* Menu Text Style */
+.main-menu a {
+  font-family: var(--negus-font-mono);
+  color: var(--negus-text);
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.main-menu a:hover {
+  color: var(--negus-accent-green);
+  border-bottom: 1px dashed var(--negus-accent-green);
+}
+
+/* Product Card Hover Glitch (Example) */
+.product-card:hover {
+  filter: hue-rotate(15deg);
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+}
