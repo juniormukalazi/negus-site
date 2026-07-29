@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEGUS</title>
+</head>
+<body>
+    <header>
+        <h1>NEGUS</h1>
+        <nav>
+            <ul>
+                <li><a href="#shop">SHOP</a></li>
+                <li><a href="IMG_0225.jpeg">Wind Breaker</a></li>
+                <li><a href="#new-arrivals">New Arrivals</a></li>
+                <li><a href="#outerwear">Outerwear</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+                <li><a href="#sale">Sale</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <p>SYS NEGUS BRAND OS COLLECTION 525 AUTH_VERIFIED LAT: 89 LON: Co.890</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Negus. All rights reserved. Privacy &middot; Terms</p>
+    </footer>
+</body>
+</html>
